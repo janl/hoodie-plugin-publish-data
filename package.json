@@ -1,7 +1,7 @@
 {
-  "name": "hoodie-plugin-template",
+  "name": "hoodie-plugin-publish-data",
   "version": "1.0.0",
-  "description": "Basic Hoodie plugin layout",
+  "description": "Publish Data with Hoodie",
   "main": "worker.js",
   "devDependencies": {
     "chai": "~1.9.0",

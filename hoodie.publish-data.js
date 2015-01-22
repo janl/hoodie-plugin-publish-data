@@ -1,6 +1,6 @@
 /**
- * Hoodie plugin template
- * An example plugin, this is where you put your frontend code (if any)
+ * Hoodie plugin publish-data
+ * Handle publishing of data into a publically readable database
  */
 
 /* global Hoodie */

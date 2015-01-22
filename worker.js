@@ -1,6 +1,6 @@
 /**
- * Hoodie plugin template
- * An example plugin worker, this is where you put your backend code (if any)
+ * Hoodie plugin publish-data
+ * Handle publishing of data into a publically readable database
  */
 
 module.exports = function (hoodie, callback) {
