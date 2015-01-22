@@ -5,18 +5,26 @@ suite('example', function () {
     // so clear before running tests
     localStorage.clear();
     hoodie.account.signOut().done(function () {
-      done();
+      hoodie.account.signUp('anontest', 'password')
+        .fail(function (err) {
+          assert.ok(false, err.message);
+        })
+        .done(function() {
+          done();
+        });
     });
   });
 
-  test('say hello', function (done) {
+  test('publish data', function (done) {
     this.timeout(10000);
-    var task = hoodie.hello('world');
+    var obj = {a:1};
+    var task = hoodie.publish('cart', obj);
     task.fail(function (err) {
+      console.log('err', err);
       assert.ok(false, err.message);
     });
-    task.done(function (doc) {
-      assert.equal(doc.msg, 'Hello, world');
+    task.done(function () {
+      assert.ok(true); // we reached this point!
       done();
     });
   });
