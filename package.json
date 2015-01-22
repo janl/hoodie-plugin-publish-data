@@ -15,7 +15,7 @@
     "grunt-shell": "^0.6.4",
     "grunt-simple-mocha": "^0.4.0",
     "hoodie-plugin-users": "^0.1.0",
-    "hoodie-server": "^1.2.4",
+    "hoodie-server": "^2.0.1",
     "mocha": "^1.21.4"
   },
   "hoodie": {
@@ -23,7 +23,9 @@
       "hoodie-plugin-users"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "async": "^0.9.0"
+  },
   "scripts": {
     "test": "grunt test"
   }
