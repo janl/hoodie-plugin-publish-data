@@ -8,8 +8,17 @@ This plugin allows you to publish data to a shared public database and read from
 
 In brief:
 
+To publish data:
+
 ```
 hoodie.publish(type, obj)
   .done()
   .fail()
+```
+
+To read the oublished data:
+
+```
+var publicStore = hoodie.store.open('plugin-publish-data');
+// use regular hoodie.store methods to work with the data
 ```
