@@ -5,3 +5,11 @@
 # Hoodie Plugin Publish Data
 
 This plugin allows you to publish data to a shared public database and read from it.
+
+In brief:
+
+```
+hoodie.publish(type, obj)
+  .done()
+  .fail()
+```
