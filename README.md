@@ -4,4 +4,4 @@
 
 # Hoodie Plugin Publish Data
 
-README TBD
+This plugin allows you to publish data to a shared public database and read from it.
