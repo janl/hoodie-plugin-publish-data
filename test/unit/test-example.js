@@ -7,9 +7,4 @@ suite('example', function () {
       done();
   });
 
-  test('test two', function (done) {
-      assert.ok(true, 'everything is still OK!');
-      done();
-  });
-
 });

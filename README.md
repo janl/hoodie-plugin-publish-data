@@ -19,6 +19,6 @@ hoodie.publish(type, obj)
 To read the oublished data:
 
 ```
-var publicStore = hoodie.store.open('plugin-publish-data');
-// use regular hoodie.store methods to work with the data
+var publicStore = hoodie.open('plugin-publish-data');
+// use regular hoodie.store methods on publicStore to work with the data
 ```
